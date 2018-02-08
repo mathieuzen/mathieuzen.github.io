@@ -1,0 +1,1 @@
+http://zensites.no-ip.biz/screenshot/api.php?url=http://fit-training.be&width=800&height=500
