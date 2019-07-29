@@ -54,6 +54,13 @@
        min-height: 70px;
      }
    }
+
+   @media screen and (max-width: 480px) {
+     .profile-pic{
+       width: 75px !important;
+       height: 75px !important;
+     }
+   }
     </style>
 
 
@@ -61,12 +68,12 @@
   <body style="text-align: justify;">
       <div class="container">
   <div class="row">
-    <div class="col-xs-8 col-xs-offset-2">
+    <div class="col-md-8 col-md-offset-2">
       <div class="row">
-        <div class="col-xs-10 col-xs-10">
+        <div class="col-xs-8 col-sm-8 col-md-10">
         <h1>Mathieu Zen<h1>
         <div class="row">
-        <div class="col-xs-10">
+        <div class="col-md-10">
         <!-- <h4><i class="fa fa-user" style="margin-right: 5px;" aria-hidden="true"></i>
         </h4> -->
         <h4><i class="fa fa-map-marker" style="margin-right: 7px;" aria-hidden="true"></i>
@@ -74,12 +81,12 @@ Louvain-la-Neuve</h4>
 </div>
       </div>
       </div>
-        <div class="col-xs-2 col-xs-2">
-        <img class="media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="img/mzen-photo.jpg" style="width: 100px; height: 100px; margin-top: 20px;">
+        <div class="col-xs-4 col-sm-4 col-md-2">
+        <img class="media-object img-circle pull-right profile-pic" data-src="holder.js/64x64" alt="64x64" src="img/mzen-photo.jpg" style="width: 100px; height: 100px; margin-top: 20px;">
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 profile">
+        <div class="col-md-12 profile">
         <h4 class="profile-info"><i class="fa fa-flag" style="margin-right: 7px;" aria-hidden="true"></i>
         Belgian</h4>
         <a class="profile-info" href="https://github.com/mathieuzen" style="color: black;"><h4><i class="fa fa-github" style="margin-right: 7px;" aria-hidden="true"></i>
@@ -93,26 +100,39 @@ Louvain-la-Neuve</h4>
     </div>
       <hr style="color: #ccc; height: 4px;" />
       <section class="row">
-        <header class="col-xs-3">
+        <header class="col-md-3">
           <h3>About</h3>
         </header>
-        <div class="col-xs-9 about" style="margin-top:20px;">
+        <div class="col-md-9 about" style="margin-top:20px;">
         <ul>
           <li>PhD in Economics and Management Sciences, specializing in Information Systems</li>
           <li>Experience as a teaching and research assistant for 6 years at university</li>
           <li>Teaching programming, discrete mathematics and algorithmics</li>
           <li>Research focused on aesthetics and usability of user interface design</li>
           <li>Effective practice of mobile and web development through published side projects</li>
+          <li>Contribution to open source project with professional experience</li>
         </ul>
         </div>
       </section>
                         <hr />
 
       <section class="row">
-        <header class="col-xs-3">
+        <header class="col-md-3">
           <h3>Experience</h3>
         </header>
-        <div class="col-xs-9">
+        <div class="col-md-9">
+          <div class="skills">
+            <h3>Programmer Analyst</h3>
+            <strong>Université catholique de Louvain</strong>
+            <p>2018 - Present</p>
+            <p>OSIS (Open Student Information System) is a system to manage the core business of higher education institutions. It is free and open source under the terms of GPL v3 public license.</p>
+            <p>The tasks assigned to the role of programmer analyst are:</p>
+            <ul>
+              <li>Gathering business requirements and redacting users stories based on meeting with final users of the system</li>
+              <li>Implementing and testing project submodules with functionalities fullfilling the requirements (Django)</li>
+              <li>Providing technical support and communication with final users</li>
+            </ul>
+          </div>
           <div class="skills">
             <h3>Research and Teaching Assistant</h3>
             <strong>Université catholique de Louvain</strong>
@@ -130,12 +150,12 @@ Louvain-la-Neuve</h4>
                         <hr />
 
       <section class="row">
-        <header class="col-xs-3">
+        <header class="col-md-3">
           <h3>Skills</h3>
         </header>
-        <div class="col-xs-9" style="margin-top:15px;">
+        <div class="col-md-9" style="margin-top:15px;">
           <div class="row-fluid skills">
-            <ul class="col-xs-6">
+            <ul class="col-md-6">
 
               <li>
                 <h4>Fullstack Development</h4>
@@ -143,10 +163,12 @@ Louvain-la-Neuve</h4>
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
+                  <li>Python</li>
                   <li>PHP</li>
                   <li>Java</li>
                   <li>GWT</li>
                   <li>Angular</li>
+                  <li>Django</li>
                   <li>Firebase</li>
                   <li>Ionic</li>
                   <li>Android</li>
@@ -155,7 +177,7 @@ Louvain-la-Neuve</h4>
                 </ul>
               </li>
             </ul>
-            <!-- <ul class="col-xs-6">
+            <ul class="col-md-6">
 
               <li>
                 <h4>HCI Expertise</h4>
@@ -166,8 +188,8 @@ Louvain-la-Neuve</h4>
                   <li>Information Visualization</li>
                 </ul>
               </li>
-            </ul> -->
-            <ul class="col-xs-6">
+            </ul>
+            <ul class="col-md-6">
 
               <li>
                 <h4>Other</h4>
@@ -190,11 +212,11 @@ Louvain-la-Neuve</h4>
                   <hr />
 
 
-      <!-- <section class="row">
-        <header class="col-xs-3">
+      <section class="row">
+        <header class="col-md-3">
           <h3>Publications</h3>
         </header>
-        <div class="col-xs-9">
+        <div class="col-md-9">
           <div class="skills" style="margin-top:22px;">
             <h4><a href=https:&#x2F;&#x2F;www.researchgate.net&#x2F;publication&#x2F;262358950_Metric-based_evaluation_of_graphical_user_interfaces_Model_method_and_software_support>Metric-Based Evaluation of Graphical User Interfaces: Model, Method, and Software Support publication description</a></h4>
             <h5>EICS&#39;2013 - The fifth ACM SIGCHI Symposium on Engineering Interactive Computing Systems</h5>
@@ -220,20 +242,25 @@ Louvain-la-Neuve</h4>
             <h5>HCI&#39;2016 - 30th British Human Computer Interaction Conference</h5>
             <p style="display: inline;">July 2016 - </p><a id="showHide-5" style="display: inline;" onclick="showAbstract(5)">Show Abstract</a>
             <p id="abstract-5" style="display: none;">&#39;How to assess user interface aesthetics?&#39; remains a question faced by many user interface researchers and designers during the user interface development life cycle since aesthetics positively influence usability, user experience, pleasureability, and trust. Visual techniques borrowed from visual design suggest that the graphical user interface layout could be assessed by aesthetic metrics such as balance, symmetry, proportion, regularity, and simplicity, to name a few. Whereas different formulas exist for computing each aesthetic metric and different interpretations to sum up their results, no consensus exists today on how to consistently evaluate these metrics in a way that is aligned with human judgement, which is intrinsically subjective. In order to address the challenging alignment of human subjectivity with machine objectivity, this paper reports on an experiment comparing the results issued from the inter-subjectivity of judgment of fifteen participants evaluating four main aesthetic metrics on a sample of ten graphical user interfaces and the values of these metrics calculated semi-automatically by a web-based application. The experiment suggests that some metrics, e.g. symmetry, proportion, simplicity, as computed from the formula are actually positively correlated with human judgment, while some other metrics, such as balance, are surprisingly not correlated with the formula computed, thus indicating that another formula or another interpretation should be determined. Therefore, a new formula for computing balance is defined that decomposes balance into horizontal and vertical balances which re-establish a correlation. This paper then provides some new insights on how to rely on these aesthetic metrics and other related metrics, whether they are interpreted manually or computed automatically.</p>
+            <hr />
+            <h4><a href=https://www.researchgate.net/publication/333796518_AB4Web_An_On-Line_AB_Tester_for_Comparing_User_Interface_Design_Alternatives>AB4Web: An On-Line A/B Tester for Comparing User Interface Design Alternatives</a></h4>
+            <h5>EICS&#39;2019 - The 11th ACM SIGCHI Symposium on Engineering Interactive Computing Systems</h5>
+            <p style="display: inline;">June 2019 - </p><a id="showHide-6" style="display: inline;" onclick="showAbstract(6)">Show Abstract</a>
+            <p id="abstract-6" style="display: none;">We introduce AB4Web, a web-based engine that implements a balanced randomized version of the multivariate A/B testing, specifically designed for practitioners to readily compare end-users' preferences for user interface alternatives, such as menu layouts, widgets, controls, forms, or visual input commands. AB4Web automatically generates a balanced set of randomized pairs from a pool of user interface design alternatives, presents them to participants, collects their preferences, and reports results from the perspective of four quantitative measures: the number of presentations, the preference percentage, the latent score of preference, and the matrix of preferences. In this paper, we exemplify the AB4Web tester with a user study for which N=108 participants expressed their preferences regarding the visual design of 49 distinct graphical adaptive menus, with a total number of 5,400 preference votes. We compare the results obtained from our quantitative measures with four alternative methods: Condorcet, de Borda count starting at one and zero, and the Dowdall scoring system. We plan to release AB4Web as a public tool for practitioners to create their own A/B testing experiments.</p>
           </div>
         </div>
       </section>
-            <hr /> -->
+            <hr />
 
       <section class="row">
-        <header class="col-xs-3">
+        <header class="col-md-3">
           <h3>Development</h3>
         </header>
-        <div class="development col-xs-9">
-          <div class="col-xs-6 projects">
+        <div class="development col-md-9">
+          <div class="col-md-6 projects">
           <div class="skills">
             <div>
-            <div class="col-xs-12">
+            <div class="col-md-12">
             <img class="logo-project" src="img/questim.png"/>
             <h4 class="title-project">Questim <a href="http://questimapp.appspot.com"><i style="margin-left: 10px;" class="fa fa-external-link"></i></a></h4>
             <p>Web-based evaluator software enabling automatic computation of GUI aesthetic measures.</p>
@@ -244,7 +271,7 @@ Louvain-la-Neuve</h4>
         </div>
 
         <div>
-          <div class="col-xs-12">
+          <div class="col-md-12">
           <img class="logo-project" src="img/llnmaps.png"/>
           <h4 class="title-project">LLN Maps <a href="https://play.google.com/store/apps/details?id=be.zen.llnmaps"><i style="margin-left: 10px;" class="fa fa-android"></i></a><a href="https://itunes.apple.com/be/app/lln-maps/id1151035903"><i style="margin-left: 15px;" class="fa fa-apple"></i></a></h4>
           <p>Mobile application with offline stored tile maps of Louvain-la-Neuve helping student to find university's facilities and buildings.</p>
@@ -259,7 +286,7 @@ Louvain-la-Neuve</h4>
       </div>
 
       <div>
-        <div class="col-xs-12">
+        <div class="col-md-12">
         <img class="logo-project" src="img/play8.png"/>
         <h4 class="title-project">Play-8 <a href="https://play.google.com/store/apps/details?id=com.pitanga.playwithme"><i style="margin-left: 10px;" class="fa fa-android"></i></a><a href="https://itunes.apple.com/us/app/play-8/id1205897556?ls=1&mt=8"><i style="margin-left: 15px;" class="fa fa-apple"></i></a></h3>
         <p>A mobile application simplifying life of gamers for gathering with friends on a video game.</p>
@@ -275,7 +302,7 @@ Louvain-la-Neuve</h4>
     </div>
 
     <div>
-      <div class="col-xs-12">
+      <div class="col-md-12">
       <img class="logo-project" src="img/notremariage.png"/>
       <h4 class="title-project">Notre Mariage <a href="https://play.google.com/store/apps/details?id=be.zen.mariage"><i style="margin-left: 10px;" class="fa fa-android"></i></a><a href="https://itunes.apple.com/us/app/notre-mariage/id1235491967?ls=1&mt=8"><i style="margin-left: 15px;" class="fa fa-apple"></i></a></h3>
       <p>Mobile application intended for managing wedding invitations sharing a key with the guests.</p>
@@ -290,10 +317,10 @@ Louvain-la-Neuve</h4>
   </div>
 </div>
 </div>
-  <div class="col-xs-6 projects">
+  <div class="col-md-6 projects">
 
                 <div>
-                  <div class="col-xs-12">
+                  <div class="col-md-12">
                   <img class="logo-project" src="img/pilab.png"/>
                   <h4 class="title-project">PiLAB <a href="http://www.pilab.be/"><i style="margin-left: 10px;" class="fa fa-external-link"></i></a></h3>
                   <p>Website hosted and created for PiLAB - pixels and interaction lab at UCL (Prof. Benoît Macq)</p>
@@ -307,7 +334,7 @@ Louvain-la-Neuve</h4>
               </div>
 
               <div>
-                <div class="col-xs-12">
+                <div class="col-md-12">
                 <img class="logo-project" src="img/thehopster.png"/>
                 <h4 class="title-project">The Hopster <a href="http://www.thehopster.be/"><i style="margin-left: 10px;" class="fa fa-external-link"></i></a></h3>
                 <p>Website hosted and created for The Hopster - homemade beer specialist</p>
@@ -318,7 +345,7 @@ Louvain-la-Neuve</h4>
               </div>
             </div>
             <div>
-              <div class="col-xs-12">
+              <div class="col-md-12">
               <img class="logo-project" src="img/fit-training.png"/>
               <h4 class="title-project">Fit Training <a href="http://www.fit-training.be/"><i style="margin-left: 10px;" class="fa fa-external-link"></i></a></h3>
               <p>Website hosted and created for Fit Training - personal trainer</p>
@@ -330,7 +357,7 @@ Louvain-la-Neuve</h4>
           </div>
 
           <div>
-            <div class="col-xs-12">
+            <div class="col-md-12">
             <img class="logo-project" src="img/pourquoipas.png"/>
             <h4 class="title-project">Pourquoi Pas <a href="http://www.clubpourquoipas.be/"><i style="margin-left: 10px;" class="fa fa-external-link"></i></a></h3>
             <p>Website hosted and created for Pourquoi Pas - association for people with disabilities</p>
@@ -351,10 +378,10 @@ Louvain-la-Neuve</h4>
             <hr />
 
             <section class="row">
-              <header class="col-xs-3">
+              <header class="col-md-3">
                 <h3>Education</h3>
               </header>
-              <div class="col-xs-9">
+              <div class="col-md-9">
                 <div class="skills">
                   <h3>Université catholique de Louvain</h3>
                   <h4>Economics and Management Sciences, PhD</h4>
